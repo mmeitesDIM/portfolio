@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: sans-serif,arial;
+    font-size: 14px;
+    background-color: plum;
+}
+
+header{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('coquelicots.PNG');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7 ;
+    overflow: hidden;
+
+}
+/*------------------------------ banner text ----------------*/
+.bannerText {
+    color: blueviolet;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid #fff;
+    max-width: 960px;
+}
+/*------------------------------ NAV ----------------*/
+menu {
+    margin-top: 0px;
+    position: static;
+    left: 0px;
+    right: 0px;
+}
+
+nav {
+    background-color: plum;
+    font-size: 12px;
+
+}
+
+nav ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav ul li {
+    padding: 14px 16px;
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+
+}
+
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: cadetblue;
+    padding-top: 10px;
+    color: black;
+}
+
+
+section{
+
+}
+/*------------------------------ DIV DOMAINE ----------------*/
+
+.domaine{
+   /* border: 0.30vw solid #fff;
+    border-radius: 0%;
+    margin: 0.5vw;*/
+    position: relative;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: plum;
+}
+
+.domaine .slider ul li{
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+}
+
+
+/*------------------------------ SLIDER ----------------*/
+
+input[type="range"] {
+    position: relative;
+    margin-left: 1em;
+}
+input[type="range"]:after,
+input[type="range"]:before {
+    position: absolute;
+    top: 1em;
+    color: black;
+}
+input[type="range"]:before {
+    left:0em;
+    content: attr(min);
+}
+input[type="range"]:after {
+    right: 0em;
+    content: attr(max);
+}
+
+/*------------------------CERCLE + RECTANGLE ----------------*/
+.workYear {
+    font-size: 17px;
+    color:#fff;
+    background: #ff675f;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 40px 0 40px 0;
+    padding-top: 40px;
+/*---   -webkit-border-radius: 50%;----*/
+   border-radius: 50%;
+}
+
+.arrowpart {
+   float: left;
+   width: 15px;
+   height: 50px;
+   background-color:plum;
+}
+
+.exCon {
+   width: auto;
+   background:#f1daf1;
+   border-bottom: solid 4px #eeeeee;
+   padding: 22px 47px 6px 47px;
+   margin-left: 15px;
+   text-align: left;
+   border-radius: 5px;
+}
+
+
+/*------------------------PORTFOLIO ----------------*/
+ul.portfolioContainer {
+    display: block;
+    padding: 0px;
+    list-style-type: none;
+}
+ul.portfolioContainer li {
+    display: inline-block;
+}
+ul.portfolioContainer li .lightCon {
+    display: block;
+    margin: 3px 3px 4px 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.portfolioContainer li img {
+    width: 200px;
+    height: 140px;
+    background-size: cover;
+}
+
+ul.portfolioContainer li:hover span.hoverBox {
+    visibility: visible;
+    left: 0px;
+    bottom: 0px;;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+li.hoverBox {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.1);
+}
